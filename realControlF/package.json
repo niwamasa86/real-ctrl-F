@@ -1,0 +1,60 @@
+{
+  "name": "realcontrolf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "poststart": "ngrok http 3000",
+    "develop": "webpack --watch --mode development",
+    "release": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keitalab/realControlF.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keitalab/realControlF/issues"
+  },
+  "homepage": "https://github.com/keitalab/realControlF#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "css-loader": "^1.0.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.3",
+    "multer": "^1.4.1",
+    "node-fetch": "^2.6.0",
+    "uuid": "^3.3.2",
+    "vue": "^2.5.17",
+    "vue-multiselect": "^2.1.3",
+    "vue-router": "^3.0.6",
+    "vue-styled-components": "^1.4.4",
+    "vuetify": "^1.3.8",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-vue": "^5.2.2",
+    "file-loader": "^2.0.0",
+    "glob": "^7.1.3",
+    "url-loader": "^1.1.2",
+    "vue-eslint-parser": "^6.0.4",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": ">=3.1.11"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base href="/" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<title>realControlF</title>
+
+	</script>
+</head>
+
+<body style="overflow-x: hidden; margin:0;">
+
+	<script>
+		/* ピッチインピッチアウトによる拡大縮小を禁止 */
+		document.documentElement.addEventListener('touchstart', function(e) {
+			if (e.touches.length >= 2) {
+				e.preventDefault();
+			}
+		}, {
+			passive: false
+		})
+		/* ダブルタップによる拡大を禁止 */
+		var t = 0;
+		document.documentElement.addEventListener('touchend', function(e) {
+			var now = new Date().getTime()
+			if ((now - t) < 350) {
+				e.preventDefault()
+			}
+			t = now
+		}, false)
+	</script>
+
+	<div id="app"></div>
+
+	<script src="/dist/main.js"></script>
+
+</body>
+
+</html>

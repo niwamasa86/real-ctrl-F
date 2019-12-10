@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Real Ctrl+F
+  </title>
+  <script type="text/javascript" src="excanvas.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.2.1/exif.min.js"></script>
+</head>
+
+<body bgcolor="#0">
+  <link href="real.css" rel="stylesheet" type="text/css">
+  <h1 class="neon">Real Ctrl+F </h1>
+  <div id="search-form" class="design-1">
+    <form name="form1" action="" onsubmit="return false;" 　>
+      <input type="hidden" name="sid" value="******">
+      <input name="textBox1" id="textbox" type="text" value="" onkeydown="go();" list="datalist" placeholder="ちょっと待ってね" 　content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+      <!-- <datalist id="datalist"> -->
+        <!-- <option value="渋谷"> -->
+      <!-- </datalist> -->
+      <div class="search-button"><input id="exec" type="button" value="検索" /></div>
+      <div class="search-button"> <input type="button" name="keyword" value="word/character" onClick="option()"></div>
+    </form>
+  </div>
+  <div class="img-wrap" id="canvas" onClick="change()" >
+    <img src="" id="target_image">
+        <!-- <div id="frame1"></div> -->
+    </div>
+    <label class="originalFileBtn ">
+　　写真を撮る・選択する
+    <input type="file" id="input_img" accept="image/*" />
+　　</label>
+
+  <input type="submit" name="move" value="move/stop" class="button" onClick="moving()">
+　<h2 id="many"></h2>
+  <pre id="output"></pre>
+
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="Rctrl.js">
+
+  </script>
+
+</body>
+
+</html>

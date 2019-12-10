@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ObjectRealcontrolF
+  </title>
+  <script type="text/javascript" src="excanvas.js"></script>
+
+</head>
+<body bgcolor="#0">
+  <link href="real.css" rel="stylesheet" type="text/css">
+  <h1 class="neon">ObjectRealcontrolF </h1>
+  <div id="search-form" class="design-1">
+  <form name="form1" action="" onsubmit="return false;">
+<input type="hidden" name="sid" value="******">
+    <input name="textBox1" type="text" value="" onkeydown="go();" list="datalist" placeholder="探したいものを入力">
+    <datalist id="datalist">
+      <!-- <option value="渋谷"> -->
+    </datalist>
+    <div class="search-button"><input id="exec" type="button" value="検索" /></div>
+
+  </form>
+</div>
+  <div class="img-wrap" id="canvas"><img src="">
+  <label class="originalFileBtn ">
+　　写真を撮る・選択する
+  <input type="file" id="input_img" accept="image/*" />
+　　</label>
+    <!-- <div id="frame1"></div> -->
+  </div>
+  <input type="submit" name="move" value="move/stop" class="button" onClick="moving()">
+  <h2 id="many"></h2>
+  <pre id="output"></pre>
+  <div class="div_cat"></div>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="object.js">
+
+  </script>
+
+</body>
+
+</html>
